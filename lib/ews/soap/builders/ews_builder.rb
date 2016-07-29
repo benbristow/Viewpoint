@@ -1024,6 +1024,10 @@ module Viewpoint::EWS::SOAP
     def is_response_requested!(response_requested)
       nbuild[NS_EWS_TYPES].IsResponseRequested(response_requested)
     end
+    
+    def sensitivity!(sensitivity)
+      nbuild[NS_EWS_TYPES].Sensitivity(sensitivity)
+    end
 
     def reminder_is_set!(reminder)
       nbuild[NS_EWS_TYPES].ReminderIsSet reminder
